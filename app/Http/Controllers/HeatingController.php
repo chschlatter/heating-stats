@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 class HeatingController extends Controller
 {
     // View form to upload image
-    public function showAddForm($type)
+    public function addValue($type)
     {
         dump(session());
         echo($type);
@@ -21,6 +21,7 @@ class HeatingController extends Controller
             'filename' => 'test.jpg'
         ]);
         */
+
 
         return view('add-form');
     }

@@ -15,6 +15,6 @@ use App\Http\Controllers\HeatingController;
 */
 
 Route::controller(HeatingController::class)->group(function () {
-    Route::get('/add/{type}', 'showAddForm');
+    Route::get('/add/{type}', 'addValue');
     Route::post('/add', 'storeValue')->name('store-value');
 });
